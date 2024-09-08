@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <title>FIT 4 LIFE tienda</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/css/style.css">
+      </head>
+<body>
+
+    <header class = "header">
+
+        <div class="container text-center">
+    
+          <div class="row" id = "header-index">
+            <div id = "header-col1" class="col-sm-3 col-md-4 col-lg-3">
+              <img class = "img-logo" src="/assets/logo_img_black.png" alt="logo de la pagina">
+              <h1 class = "nombre-pagina">FIT 4 LIFE</h1>
+            </div>
+    
+            <div id = "header-col2" class="col-sm-5 col-md-5 col-lg-4">
+              <nav class = "nav-bar">
+                <ul>
+                    <li><a href="/index.html" target="_self"> Inicio</a></li>
+                    <li><a href="/pages/rutinas.html" target="_self"> Rutinas</a></li>
+                    <li><a href="/pages/tienda.html" target="_self"> Tienda</a></li>
+                    <li><a href="/pages/blog.html" target="_self"> Blog</a></li>
+                    <li><a href="/pages/nosotros.html" target= "_self">Nosotros </a></li>
+                </ul>
+              </nav>
+            </div>
+    
+            <div id = "header-col3" class="col-sm-4 col-md-3 col-lg-4">
+    
+                  <div class = "contenedor-iconos">
+      
+                      <i class="fa-sharp fa-solid fa-magnifying-glass" style="color: #5CF64A;"></i> 
+                      <i class="fa-solid fa-user" style="color: #5CF64A;"></i> 
+                      <i class="fa-solid fa-cart-plus" style="color: #5CF64A;"></i>  
+                      <i class="fa-solid fa-heart" style="color: #5CF64A;"></i>
+                  </div>  
+    
+              </div>
+          </div>
+        </div>
+    </header>
+
+    <!--
+    <section id = "menu-responsive">
+
+       <header class = "header-movile">
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    &#9776;
+                </div>
+
+                <div id="filtros-responsive" >
+                    <p><span>Categoria</span></p>
+                    <label>
+                        <input type="checkbox" name="filtro-categorias"> Accesorios para gym
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="filtro-categorias"> Accesorios para boxeo
+                    </label><br>
+    
+                    <p><span>Compra por precio</span></p>
+                    <label>
+                        <input type="checkbox" name="filtro-precio"> Menos de $500
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="filtro-precio">$500 a $1000
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="filtro-precio">$1000 a $1500
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="filtro-precio">$1500 o más
+                    </label><br>
+    
+                    <p>En rebaja</p>
+                    <label>
+                        <input type="checkbox" name="filtro-rebaja"> Rebaja
+                    </label>
+                </div>
+            </nav>
+       </header>
+
+    </section>
+    
+    -->
+    
+  
+<main class="main-tienda">
+
+    <div id="filtros-accesorios" class ="d-sm-none d-md-none">
+        <p><span>Categoria</span></p>
+        <label>
+            <input type="checkbox" name="filtro-categorias"> Accesorios para gym
+        </label><br>
+        <label>
+            <input type="checkbox" name="filtro-categorias"> Accesorios para boxeo
+        </label><br>
+
+        <p><span>Compra por precio</span></p>
+        <label>
+            <input type="checkbox" name="filtro-precio"> Menos de $500
+        </label><br>
+        <label>
+            <input type="checkbox" name="filtro-precio"> $500 a $1000
+        </label><br>
+        <label>
+            <input type="checkbox" name="filtro-precio"> $1000 a $1500
+        </label><br>
+        <label>
+            <input type="checkbox" name="filtro-precio"> $1500 o más
+        </label><br>
+
+        <p>En rebaja</p>
+        <label>
+            <input type="checkbox" name="filtro-rebaja"> Rebaja
+        </label>
+    </div>
+
+    <!-- Contenedores para los artículos en la tienda -->
+
+    <div class = "contenedor-tienda">
+        <div id="mostrar-articulos">
+            <div class="contenedor-articulo">
+                <div class="cont-articulo">
+                    <img class="img-articulo" src="/assets/img_articulos/Guantes-box2.jpg">
+                    <h3 class = "titulo-articulo">Guantes de box</h3>
+                    <h5>$1200</h5>
+                    <h6>Acerca de este artíulo</h6>
+                    <ul class = "d-none d-sm-none d-md-none d-lg-block d-xl-block d-xl-block descripcion-producto">
+                        <li>
+                            <p>Hecho de piel sintética de alta calidad, protección de núcleo de espuma de cuatro capas</p>
+                        </li>
+                        <li>
+                            <p>Barra de agarre ergonómica, palma de malla completa</p>
+                        </li>
+                        <li>
+                            <p>Innovador sistema de correa trasera giratoria, pulgar ergonómicamente asegurado</p>
+                        </li>
+                        <li>
+                            <p>Forro interior de espuma de poliéster</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="contenedor-articulo">
+                <div class="cont-articulo">
+                    <img class="img-articulo" src="/assets/img_articulos/saco-de-box2.jpg">
+                    <h3 class = "titulo-articulo">Saco de boxeo</h3>
+                    <h5>$1600</h5>
+                    <h6>Acerca de este artículo</h6>
+                    <ul class = "d-none d-sm-none d-md-none d-lg-block d-xl-block d-xl-block descripcion-producto" >
+                        <li>
+                            <p>El saco de arena resistente está hecho de alta calidad y cuero de PU, que es resistente y duradero</p>
+                        </li>
+                        <li>
+                            <p>Esta bolsa resistente tiene un forro de espuma suave de 2" para proporcionar una superficie de impacto cómoda para profesionales y todos los practicantes de boxeo</p>
+                        </li>
+                        <li>
+                            <p>Saco de arena profesional de 1,2 m</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="contenedor-articulo">
+                <div class="cont-articulo">
+                    <img class="img-articulo" src="/assets/img_articulos/set-mancuernas-basicas.jpg">
+                    <h3>Set de mancuernas</h3>
+                    <h5>$3000</h5>
+                    <h6>Acerca de este artículo</h6>
+                    <ul class = "d-none d-sm-none d-md-none d-lg-block d-xl-block d-xl-block descripcion-producto">
+                        <li>
+                            <p> El recubrimiento Premium de Neopreno soporta el uso diario sin dejar de verse bien</p>
+                        </li>
+                        <li>
+                            <p> Lleva tu rutina de entrenamiento con estas pesas para ejercicio en casa al siguiente nivel, pesas de 3LB, 5LB y 8 LB</p>
+                        </li>
+                        <li>
+                            <p> Perfectas para realizar numerosos ejercicios de FUNCTIONAL FITNESS y para fortalecer, tanto en casa como en el gimnasio, 
+                                tus músculos abdominales, bíceps, tríceps, cuádriceps y glúteos</p>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+    
+            <div class="contenedor-articulo">
+                <div class="cont-articulo">
+                    <img class="img-articulo" src="/assets/img_articulos/set-completo-kettlebells.jpg">
+                   <h3>Set de kettlebell</h3>
+                   <h5>$5000</h5>
+                   <h6>Acerca de este articulo</h6>
+                   <ul class = "d-none d-sm-none d-md-none d-lg-block d-xl-block d-xl-block descripcion-producto">
+                    <li>
+                        <p>Set de pesas rusas todo proposito de 10lb 15lb 25lb 35lb y 45lb </p>
+                    </li>
+                    <li>
+                        <p>El mango liso y ligeramente texturizado proporciona un agarre cómodo y seguro para las repeticiones altas, 
+                            hace que la tiza sea innecesaria tanto para hombres como para mujeres.</p>
+                    </li>
+                    <li>
+                        <p>Pintado para prevenir la corrosión y aumentar la durabilidad y darle una fuerza de agarre sin resbalar en la mano 
+                            como un acabado brillante</p>
+                    </li>
+                   </ul>
+                </div>
+            </div>
+    
+            <div class="contenedor-articulo">
+                <div class="cont-articulo">
+                    <img class="img-articulo" src="/assets/img_articulos/cast-iron-dumbbell-weights.jpg">
+                    <h3>Rack para press banca</h3>
+                    <h5>$2700</h5>
+                    <h6>Acerca de este articulo</h6>
+                    <ul class = "d-none d-sm-none d-md-none d-lg-block d-xl-block d-xl-block descripcion-producto">
+                        <li>
+                            <p>Experimente una estabilidad y durabilidad incomparables con nuestra construcción de acero de una sola pieza sin costuras. 
+                                La estable estructura de acero garantiza un soporte confiable durante los entrenamientos intensos</p>
+                        </li>
+                        <li>
+                            <p>El banco de 42,4 pulgadas se adapta a diferentes personas, lo que le brinda más espacio para estirarse mejor, 
+                                un esencial versátil para el gimnasio en casa</p>
+                        </li>
+                        <li>
+                            <p>El banco de pesas puede ayudarlo a hacer varios ejercicios, el banco de ejercicios se puede plegar para satisfacer sus necesidades de diferentes movimientos</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="contenedor-articulo">
+                <div class="cont-articulo">
+                    <img class="img-articulo" src="/assets/img_articulos/barra-olimpica.jpeg">
+                    <h3>Barra olimpica</h3>
+                    <h5>$1500</h5>
+                    <h6>Acerca de este articulo</h6>
+                    <ul class = "d-none d-sm-none d-md-none d-lg-block d-xl-block d-xl-block descripcion-producto">
+                        <li>
+                            <p>Barra para levantamiento de pesas, fortalece tu cuerpo y tonifica tus músculos, soporta 300 libras (136 kg)</p>
+                        </li>
+                        <li>
+                            <p>Ideal para ejercicios del tren inferior y superior: sentadillas, press de banca, press militar, peso muerto, 
+                                hip thrust y ejercicios de pantorrilla</p>
+                        </li>
+                        <li>
+                            <p>Su estructura de acero y bujes de cobre le dan la mayor durabilidad para todos tus ejercicios a cualquier intensidad de entrenamiento, 
+                                con capacidad de carga de hasta 300 libras</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contenedor-articulo">
+                <div class="cont-articulo">
+                    <img class="img-articulo" src="/assets/img_articulos/banca para pesas.jpg">
+                    <h3>Banco plano</h3>
+                    <h5>$1100</h5>
+                    <h6>Acerca de este artículo</h6>
+                    <ul class = "d-none d-sm-none d-md-none d-lg-block d-xl-block d-xl-block descripcion-producto">
+                        <li>
+                            <p>El bastidor de tubo de acero de alta calidad para trabajos pesados ​​garantiza un soporte estable para el banco, 
+                                y la espuma de alta densidad</p>
+                        </li>
+                        <li>
+                            <p>Reforzado con recubrimiento en polvo, este banco utilitario resiste el desgaste debido al uso intensivo y los entrenamientos extenuantes</p>
+                        </li>
+                        <li>
+                            <p>Diseñado para caber en su hogar sin ocupar mucho espacio. Su estructura de acero para trabajos pesados ​​es altamente duradera y está</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contenedor-articulo">
+                <div class="cont-articulo">
+                    <img class="img-articulo" src="/assets/img_articulos/top-view-orange-weights.jpg">
+                    <h3>Mancuernas ligeras</h3>
+                    <h5>$300</h5>
+                    <h6>Acerca de este artículo</h6>
+                    <ul class = "d-none d-sm-none d-md-none d-lg-block d-xl-block d-xl-block descripcion-producto">
+                        <li>
+                            <p>La forma hexagonal de las mancuernas evita que se rueden y se mantiene en su lugar cuando no están en uso</p>
+                        </li>
+                        <li>
+                            <p>Con un exterior de neopreno con revestimiento suave, este juego de pesas proporciona un agarre cómodo y ergonómico 
+                                que también absorbe la humedad</p>
+                        </li>
+                        <li>
+                            <p> Los pesos de las mancuernas con revestimiento de neopreno se venden en pares y están disponibles en 1, 2, 3, 4, 5, 6, 8, 10, 12, 15 libras</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contenedor-articulo">
+                <div class="cont-articulo">
+                    <img class="img-articulo" src="/assets/img_articulos/strong-tattooed-white-unlabeled-tank-t-shirt-male-athlete-shows-calisthenic-moves-holding-dip-position-parallel-bars.jpg">
+                    <h3>Paralelas para fondos</h3>
+                    <h5>$1250</h5>
+                    <h6>Acerca de este artículo</h6>
+                    <ul class = "d-none d-sm-none d-md-none d-lg-block d-xl-block d-xl-block descripcion-producto">
+                        <li>
+                            <p>Los pies de goma ayudan a evitar resbalones, y un conector de seguridad estabilizador extiende 
+                                la longitud entre las barras de 16 1/4 pulgadas a 23 1/4 pulgadas</p>
+                        </li>
+                        <li>
+                            <p>Los tubos de hierro resistentes con recubrimiento en polvo pueden soportar hasta 400 libras</p>
+                        </li>
+                        <li>
+                            <p>Cada barra mide 24 pulgadas de ancho, 31 pulgadas de alto, y es ajustable hasta 35 pulgadas, por lo que puedes 
+                                configurarlas en paralelo o escalonado para más variedad de ejercicios</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contenedor-articulo">
+                <div class="cont-articulo">
+                    <img class="img-articulo" src="/assets/img_articulos/high-angle-weights-floor-gym.jpg">
+                    <h3>Disco olimpico 45 lb </h3>
+                    <h5>$3800</h5>
+                    <h6>Acerca de este artículo</h6>
+                    <ul class = "d-none d-sm-none d-md-none d-lg-block d-xl-block d-xl-block descripcion-producto">
+                        <li>
+                            <p>Descubre la potencia de nuestro par de discos tipo bumper de 45 lbs cada uno. Con un peso equivalente a 20.41 kg </p>
+                        </li>
+                        <li>
+                            <p>Con medidas generales de 44.5 x 3.1 cm, estos discos de peso se adaptan perfectamente a cualquier espacio de entrenamiento.</p>
+                        </li>
+                        <li>
+                            <p>Sus anillos de acero inoxidable de 2 pulgadas le darán mayor resistencia al desgaste y facilitarán su colocación en barras olímpicas o semi olímpicas</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+        </div> 
+
+    </div>
+   
+    
+</main>
+
+<script>
+    function toggleMenu() {
+        const filtros = document.getElementById("filtros-responsive");
+        filtros.classList.toggle("active");
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,700 @@
+*{
+    margin: 0;
+    border: 2px solid red;
+}
+
+body{
+    background-color: #1f2023;
+    color: #FDF7F7;
+}  
+
+/* -------------header general para la pagina---------------*/
+
+header{
+    background-color: #9B5DE5 ;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.nav-bar a{
+    font-size: 0.9em;
+}
+
+
+/* header columna 1 */
+
+#header-col1{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+#header-col1 h1{
+    margin-left: 2%;
+}
+
+#header-col1 img.img-logo{
+    width: 25%;
+    margin: 1% 0 1% 1%;
+}
+
+/*header col2*/
+.nav-bar ul{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0%;
+    margin-top: 7%;
+}
+
+.nav-bar li{
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color:#FDF7F7
+}
+
+/* header columna 3 */
+
+#header-col3{
+    margin:3%;
+    width: 35%;
+}
+div.contenedor-iconos{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+}
+
+/* ---- Pagina index ----*/
+
+.index-video-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.contenedor-itc3{  
+    display: inline-block;
+    margin: 2% 0 2% 0;
+    padding: 1em 2em; /* Espacio alrededor del texto, relativo al tamaño de la fuente */
+    border: 0.15em solid #231F20; /* Color y grosor del borde, relativo al tamaño de la fuente */
+    border-radius: 1.5em; /* Bordes muy redondeados, relativo al tamaño de la fuente */
+    text-align: center;
+    background-color: #7C2BDE; /* Color de fondo opcional */
+    font-size: 1.3rem; /* Tamaño de la fuente base */
+}
+
+
+
+video.video-index{
+    width: 70%;
+    height: 60%;
+}
+
+
+p.rutina-desc{
+    text-align: left;
+   padding-top: 3%;
+}
+
+.index-txt-container{
+    text-align: center;
+}
+
+.itc-t1{
+    font-size: 3em;
+}
+
+.itc-t2{
+   font-weight: 600;
+}
+
+.itc-t3{
+    padding: 6% 0 2% 0;
+    font-weight: 600;
+}
+
+#index-titulo-rutina{
+    font-weight: 620;
+    font-size: 1.5rem;
+    padding-top: 5%;
+    color: #B183EC;
+}
+
+#main-rutina-cont{
+    background-color: #3A3B41; /*Color de fondo del texto en la el index de la pagina */
+}
+
+#sec-index-rutinas:first-child{
+    margin-top: 5%;
+}
+
+#sec-index-rutinas{
+    margin-top: 15%;
+}
+
+#index-desc-rutina{
+    text-align: justify;
+    
+}
+
+.index-img-rutina{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* -------------PAGINA-RUTINAS---------------*/
+
+.main-rutinas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+
+#contenedor-rutinas{
+    width: 70%;
+}
+
+.contenedor-titulo {
+    display: inline-flex;
+    justify-content: center;
+    padding: 2%;
+    width: 100%;
+}
+
+.main-rutinas p {
+    font-size: 1.5em;
+}
+
+.main-rutinas h2{
+    color:#9B5DE5;
+}
+
+.titulo-rutina {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.contenedor-rutina {
+    background-color: #3A3B41;
+    width: 33%;
+    height: 70vh;
+    border: 5px solid black;
+    border-radius: 3%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-rutina p {
+    font-size: 1em;
+}
+
+#img-rutina{
+    width: 80%;
+    height: 50%;
+}
+
+
+
+/* -------------PAGINA-TIENDA---------------*/
+
+.main-tienda {
+    display: flex;
+    flex-flow: row;
+    padding: 1%;
+}
+
+#filtros-accesorios {
+    display: inline;
+    flex-flow: column;
+    align-items: left;
+    margin-left: 1%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 300vh;
+}
+
+#filtros-accesorios span {
+    display: inline;
+}
+
+#filtros-accesorios label{
+    padding: 6% 0 6% 0;
+}
+
+#filtros-accesorios p {
+    font-size: 1.7em;
+    color: #7b2cbf; /* color de la tipografia en accesorios*/
+    margin: 20% 0 20% 0;
+    padding: 5% 0 5% 0;
+}
+
+div.contenedor-articulo {
+    display: flex;
+    height: 95vh;
+    width: 40%;
+    border: 5px solid black;
+    background-color:  #3A3B41;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    justify-content: center;
+}
+
+div.contenedor-articulo ul li p{
+    font-size: small;
+    font-weight: 400;
+}
+
+img.img-articulo {
+    width: 20vw; /* 30% del ancho de la ventana del navegador */
+    height: 35vh; /* 30% de la altura de la ventana del navegador */
+    margin-top: 6%;
+    margin-left: 23%;
+}
+
+
+#mostrar-articulos {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.menu-icon {
+    font-size: 2.1em;
+    cursor: pointer;
+    display: none; 
+}
+
+#filtros-responsive {
+    display: none; /* Oculto por defecto */
+    background-color: #333; /* Fondo similar al del menú */
+    color: white;
+}
+
+
+#filtros-responsive.active {
+    display: block; /* Se muestra cuando tiene la clase 'active' */
+}
+
+
+/* -------------PAGINA-BLOG---------------*/
+
+.contenedor-blog{
+    font-family: "Roboto", sans-serif;
+}
+.blog-titulo{
+    margin-top: 3%;
+}
+.blog-intro{
+    margin-top: 1%;
+}
+
+.parrafo-blog h5{
+    margin: 3% 0 2% 0;
+}
+
+.parrafo-blog{
+    text-align: justify;
+}
+
+#blog-row{
+    margin-top: 3%;
+    text-align: justify;
+}
+
+.img-blog-container img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* -------------PAGINA-NOSOTROS---------------*/
+
+.nosotros-main-grid-container{
+    display: grid;
+    width: 95vw ;
+    
+}
+
+.contenedor-nosotros{
+    font-family: "Roboto", sans-serif;
+}
+
+.cont-img-nosotros{
+    box-sizing: content-box;
+    display:block;
+    padding-bottom: 2%;
+}
+.img-nosotros{
+    width: 70%;
+    height: 70%;
+}
+
+.cont-nosotros-txt h1,h2{
+    color:#FCFCFC;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.cont-nosotros-txt h2{
+    padding-bottom: 3%;
+}
+
+.cont-quienes-somos{
+    margin-top: 3%;
+}
+
+.cont-quienes-somos p{
+    text-align: justify;
+}
+
+.cont-vision p{
+    text-align: justify;
+}
+
+
+@media (max-width: 1199.98px) {
+    /* Configuracion del header de la pagina principal en tabletas grandes*/
+    .nav-bar{
+        margin-top: 3%;
+        width: 170%;
+    }
+    .nav-bar ul {
+        flex-direction: row; /* Muestra los links en una columna en lugar de en fila */
+        align-items: center;
+    }
+    .nav-bar ul li {
+        margin: 2% 0; /* Ajusta el margen entre los links */
+      }
+
+    .nav-bar li a{
+        font-size: 1.6rem;
+    }
+
+   .contenedor-iconos{
+        width: 300%;
+   }
+    
+   .index-video-container{
+    margin-top: 10%;
+   }
+
+   /*configuracion de la pagina index****************/
+   .rutina-desc{
+    text-align: right;
+    padding-top: 3%;
+    }
+
+    #contenedor-rutinas{
+        width: 40%;
+        height: 30%;
+    }
+
+    /*configuracion de la pagina rutinas *************/
+
+    #contenedor-rutinas{
+        width: 55%;
+    }
+    .contenedor-rutina{
+        height: 65%;
+    }
+    .img-rutina-jalon-handicap {
+        width: 75%;
+        height: 45%;
+    }   
+    .img-rutina-lady-pecs-principiantes{
+        width: 55%;
+        height: 25%;
+    }
+
+    /*configuracion de la pagina tienda *************/
+    
+    .menu-icon {
+        display: block; /* Se muestra el ícono del menú en vista mobile */
+    }
+    
+    /* Muestra los filtros dentro del menú responsive en pantallas pequeñas */
+    #filtros-responsive {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .descripcion-producto{
+        display: none;
+    }
+
+    div.contenedor-articulo:nth-child(1){
+        margin-top: 2%;
+    }
+
+    div.contenedor-articulo:nth-child(2){
+        margin-top: 2%;
+    }
+
+    div.contenedor-articulo {
+        display: flex;
+        height: 35vh;
+        width: 35%;
+        margin: 5% 0 0 3%;
+    }
+    
+    div.contenedor-articulo ul li p{
+        font-size: small;
+        font-weight: 400;
+    }
+    
+    img.img-articulo {
+        width: 25vw; 
+        height: 20vh; 
+        margin-top: 6%;
+        margin-left: 0%;
+    }
+    
+    .cont-articulo h6{
+        border: 0.15em solid #231F20;
+        background-color: #7C2BDE;
+        border-radius: 1.5em;
+        margin: 2% 0 2% 0;
+        padding: 1em 2em;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+
+    /* Header-mobile*/
+
+    .header div.col-logo img.img-logo{
+        width: 30%;
+        height: 30%;
+    }
+
+    .img.img-logo{
+        width: 70%;
+        height: 70%;
+    }
+
+    .nombre-pagina{
+        font-size: 1.5em;
+    }
+
+    #header{
+        width: 100%;
+    }
+
+    #header-col2{
+        border: blue solid 8px;
+    }
+    .nav-bar ul{
+        width: 58%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .nav-bar ul li a{
+        font-size: medium;
+    }
+    
+    /*index-mobile*/
+
+    .index-video-container{
+       width: 100%;
+       height: 100%;
+    }
+
+    .index-txt-container{
+        padding-top: 10%;
+    }
+
+    .itc-t1{
+        font-size: 1.8em;
+    }
+
+    .itc-t2{
+        margin-top: 8%;
+    }
+
+    .contenedor-itc3{
+        font-size: 1rem; /* Tamaño de la fuente base */
+    }
+     
+    #index-titulo-rutina{ /* Empezamos a editar los contenedores dentro del index*/
+        font-weight: 580;
+        font-size: 0.8rem;
+        padding-top: 5%;
+        color: #B183EC;
+    }
+
+    #index-desc-rutina{ /* Como reemplazamos la descripcion con un boton se oculta en la vista mobile */
+      display:none;
+    }
+
+    .button-opcion-ver-más{ /*Edición  del boton para ver más */
+        display: inline-block;
+        margin: 2% 0 2% 0;
+        padding: 1em 2em; /* Espacio alrededor del texto, relativo al tamaño de la fuente */
+        border: 0.15em solid #231F20; /* Color y grosor del borde, relativo al tamaño de la fuente */
+        border-radius: 1.5em; /* Bordes muy redondeados, relativo al tamaño de la fuente */
+        text-align: center;
+        background-color: #7C2BDE; /* Color de fondo opcional */
+        height: 20%;
+        font-size: 0.8rem; /* Tamaño de la fuente base */
+    }
+
+    .rutina-desc{
+        font-size: small;
+        margin: 0;
+    }
+
+    #sec-index-rutinas{
+        margin:20% 0 20% 0;
+    }
+
+
+    /*Tienda-mobile*/
+
+    #filtros-accesorios{
+        display: none;
+    }
+
+    .menu-icon {
+        display: block; /* Se muestra el ícono del menú en vista mobile */
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+   .contenedor-tienda{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+   }
+
+    div.contenedor-articulo {
+        height: 80%;
+        width: 60%;
+        border: 3% solid black;
+        border-radius: 3%;
+        margin-bottom: 1%;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .main-tienda {
+        display: flex;
+        flex-flow: column;
+        align-items: center; 
+        padding: 1%;
+    }
+
+    #mostrar-articulos {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center; 
+    }
+
+    img.img-articulo {
+        width: 60%; 
+        height: 45%;
+        margin-left:21%;
+    }
+    
+    .cont-articulo h6{
+        border: 0.15em solid #231F20;
+        background-color: #7C2BDE;
+        border-radius: 1.5em;
+        margin: 2% 0 2% 0;
+        padding: 0.7em 1.7em;
+        text-align: center;
+    }
+
+    /*Rutinas-mobile*/
+
+    .main-rutinas {
+        display: flex;
+        flex-flow:column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2%;
+    }
+
+    .contenedor-rutina {
+        width: 70%;
+        height: 50vh;
+        border: 2px solid black;
+        border-radius: 2%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contenedor-titulo{
+        margin: 14% 0 3% 0;
+    }
+
+    /* Blog-mobile */
+
+    .blog-titulo{
+        margin: 4% 0 3% 0 ;
+    }
+
+    .img1-blog-container img{
+        width: 200%;
+        height: 200%; /*a lo mejor y lo tengo que cambiar */
+        margin-top: 30%;
+    }
+
+    .parrafo1-blog{
+        margin-top: 4% 0 2% 0
+    }
+
+    .img2-blog-container img{
+        width: 100%;
+        height: 100%;
+        margin-top: 35%;
+    }
+
+    /* Nosotros-mobile */
+
+    .cont-nosotros-txt h1{
+        margin-top: 8%
+    }
+
+    .cont-nosotros-txt h2{
+        padding-top: 5%;
+        margin-top: 6%;
+    }
+    
+    #mobile-nosotros-txt1{
+        margin-top: 1%
+    } 
+
+}
+
+
+
